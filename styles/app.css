@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* All backgrounds go edge to edge */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  width: 25%;
+  border-radius: 0.5rem;
+}
+
+.container {
+  background: blue;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.badge {
+  padding: 0.5rem;
+  max-width: 25%;
+  height: 20vh;
+  background: red;
+  border-radius: 0.5rem;
+}
+
+.nameplate {
+
+}
+
+.nametag img {
+  float: left;
+}
