@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 body {
@@ -14,69 +15,92 @@ ul {
 }
 
 img {
-  width: 25%;
+  width: 30%;
   border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Layout */
+
+.section {
+  padding: 2rem;
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 65rem;
   margin: 0 auto;
 }
+
+.row {
+  overflow: auto;
+  margin: -2rem;
+}
+
+/* Navigation */
 
 .nav {
   color: white;
   background: #5BC0DE;
-  padding: 0.2rem;
-  display: flex;
-  justify-content: space-between;
+  padding: 0rem 0.5rem;
+  overflow: auto;
 }
 
 .nav-left {
-  font-size: 1.2rem;
+  padding-left: 1rem;
+  float: left;
+  font-size: 1.5rem;
+}
+
+.nav-right {
+  float: right;
 }
 
 .navlist {
-  display: flex;
-  margin: 0 -0.5rem;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
 .navlist-item {
+  display: inline-block;
   margin: 0 0.5rem;
 }
 
 .navlist-link {
-  color: inherit;
+  color: white;
   text-decoration: none;
 }
 
+/* Developers */
+
 .badge {
-  display:inline-block;
-  padding: 0.7rem;
-  width: 20%;
+  width: calc(100% / 3 - 2rem - 2rem);
   max-width: 20rem;
   min-width: 15rem;
   border-radius: 0.5rem;
   border: 2px solid #dddddd;
+  margin: 2rem;
+  float: left;
 }
 
 .nameplate {
-  float: right;
 }
 
 .nameplate__name {
+  margin-left: 1rem;
   margin: 0;
   font-weight: 400;
 }
 
 .nameplate__username {
+  margin-left: 1rem;
   margin: .2rem;
   font-weight: 400;
   color: #aaaaaa;
 }
 
 .nametag {
+  padding: 0.5rem;
+  overflow: auto;
   height: 55%;
 }
 
@@ -88,18 +112,32 @@ img {
   display: inline-block;
   height: 1rem;
   width: 1rem;
-  background: yellow;
   border-radius: 50%;
   color: transparent;
+}
+
+#javascript {
+  background: #F1E05A;
+}
+
+#ruby {
+  background: #701516;
+}
+
+#php {
+  background: #4F5D95;
+}
+
+#html {
+  background: #E44B23;
 }
 
 .github__repos {
   display: inline-block;
   width: 100%;
-  height: 20%;
-  padding: 0.5rem 0rem;
-  margin-top: 0.2rem;
+  height: 15%;
   border-top: 2px solid #dddddd;
+  padding: 0.5rem;
 }
 
 .github__repos--name h5 {
@@ -108,12 +146,12 @@ img {
 }
 
 .language {
-  width: 5.5rem;
   float: right;
 }
 
 .language__color {
   margin: 0;
+  margin-right: 0.2rem;
 }
 
 .language__name {
